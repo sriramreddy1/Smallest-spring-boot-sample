@@ -35,6 +35,15 @@ pipeline:
                       cd SmallestSpringApp  
                       mvn -B clean package  
                       mvn -B test
+              - step:
+                  type: BuildAndPushDockerRegistry
+                  name: BuildAndPushDockerRegistry_1
+                  identifier: BuildAndPushDockerRegistry_1
+                  spec:
+                    connectorRef: account.Docker_Hub_Connector
+                    repo: sriramry/harness
+                    tags:
+                      - v1.0
   properties:
     ci:
       codebase:
