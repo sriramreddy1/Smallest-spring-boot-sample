@@ -32,8 +32,8 @@ pipeline:
                   spec:
                     shell: Bash
                     command: |-
-                      Cd SmallestSpringApp
-                      mvn -B clean package
+                      cd SmallestSpringApp  
+                      mvn -B clean package  
                       mvn -B test
   properties:
     ci:
