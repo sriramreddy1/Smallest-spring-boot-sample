@@ -44,6 +44,8 @@ pipeline:
                     repo: sriramry/harness
                     tags:
                       - v1.0
+                    dockerfile: SmallestSpringApp/Dockerfile
+                    context: SmallestSpringApp
   properties:
     ci:
       codebase:
