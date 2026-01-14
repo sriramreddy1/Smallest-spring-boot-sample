@@ -54,7 +54,7 @@ pipeline:
         spec:
           deploymentType: Kubernetes
           service:
-            serviceRef: account.K8sServiceDeployingArtifacts
+            serviceRef: account.K8sServiceDeployingArtifactsnew
             serviceInputs:
               serviceDefinition:
                 type: Kubernetes
@@ -67,7 +67,7 @@ pipeline:
             environmentRef: account.Dev
             deployToAll: false
             infrastructureDefinitions:
-              - identifier: Targetinfra
+              - identifier: TargetInfrastructure
           execution:
             steps:
               - step:
